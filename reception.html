@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reception</title>
+<style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f3fb;
+    }
+    nav {
+      background: #7c3592;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 15px 20px;
+      gap: 15px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img { height: 40px; }
+    .logo-title {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    header {
+      background: linear-gradient(90deg, #8e44ad, #9b59b6);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #8e44ad;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 0 0 12px 12px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      font-size: 0.95em;
+    }
+    .download-btn:hover { background: #732d91; }
+    footer {
+      background: #8e44ad;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      flex-direction: column;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+    .lightbox button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .lightbox button:hover { background: #ddd; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      .gallery { padding: 15px; gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+<div class="logo">
+<img alt="SVTH Logo" src="https://drive.google.com/thumbnail?id=1zxtTQJhO3zg-E-iL94vuwULzutB9Q5V1"/>
+<span class="logo-title">SVTH</span>
+</div>
+<a href="index.html">Home</a>
+</nav>
+<header>
+<h1>Reception</h1>
+<p>A beautifully aligned, mobile-optimized image gallery</p>
+</header>
+<div class="gallery"><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1tMJQhkJwYS7Bc-Yg-13p7DIOomc6MKDe"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1tMJQhkJwYS7Bc-Yg-13p7DIOomc6MKDe">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1H4KJG5kVaFkeglarFwVzZAgoQ534PnQf"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1H4KJG5kVaFkeglarFwVzZAgoQ534PnQf">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=16FLkYR5n5aSy96m_MBiMhgfjVVoVU7dK"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=16FLkYR5n5aSy96m_MBiMhgfjVVoVU7dK">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1QoZEuVRRd_pPjL_OTNsYtc4lybFnbaaK"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1QoZEuVRRd_pPjL_OTNsYtc4lybFnbaaK">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Mecsdr_vVWurIKPkPgNYJKbwFDT_Rimr"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Mecsdr_vVWurIKPkPgNYJKbwFDT_Rimr">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1EnRinTdZ1qHXuFnntSTgyKNcWtEHFuoU"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1EnRinTdZ1qHXuFnntSTgyKNcWtEHFuoU">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=15GtByiuDTkawMbL8nwvqwFcir50lYxuH"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=15GtByiuDTkawMbL8nwvqwFcir50lYxuH">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1E3NHzu9ufz3HvrR1k7zoC1Ln3-HLbAbt"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1E3NHzu9ufz3HvrR1k7zoC1Ln3-HLbAbt">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1xOAZyPxflhHys2F21HbN661YTM4UNz0O"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1xOAZyPxflhHys2F21HbN661YTM4UNz0O">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1qhENvhHcxnAGIyLWPW6vnjYXes9R-FIV"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1qhENvhHcxnAGIyLWPW6vnjYXes9R-FIV">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=146aiKmBoVz7E_M9yaeRDqaNWdb8REe8A"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=146aiKmBoVz7E_M9yaeRDqaNWdb8REe8A">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1WWsuOOPOoam9kGN9tIBdnAmBUyxvfwIq"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1WWsuOOPOoam9kGN9tIBdnAmBUyxvfwIq">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1GgeOdPilA3iG_h-pEZTUMJ24We7Yamd9"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1GgeOdPilA3iG_h-pEZTUMJ24We7Yamd9">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Q0Y5FRUY-u95o5OuNL0AfJ6rxwkCCgww"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Q0Y5FRUY-u95o5OuNL0AfJ6rxwkCCgww">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1u847bV64KstOd5QzB0lUp1AhPJWCIDud"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1u847bV64KstOd5QzB0lUp1AhPJWCIDud">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1n5oqIHZ9uuNe2xmpRTKwuGB72ApVJMu6"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1n5oqIHZ9uuNe2xmpRTKwuGB72ApVJMu6">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1WaOlPGGC7aXMp8ZKDMmmTvUDHIFGtDNK"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1WaOlPGGC7aXMp8ZKDMmmTvUDHIFGtDNK">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1c5b6xZY9q_w71ogfn_BtD9lIa0m5wgAf"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1c5b6xZY9q_w71ogfn_BtD9lIa0m5wgAf">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1g1VAhVxkYI5qMN3UtCf9dQ2I9jnxL9qL"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1g1VAhVxkYI5qMN3UtCf9dQ2I9jnxL9qL">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1KAa7aboNY6jWQpQejKJE9dXCKmYK_4m8"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1KAa7aboNY6jWQpQejKJE9dXCKmYK_4m8">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1LgeJQlzFRagpAiDKP1TvL75KakmATDRj"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1LgeJQlzFRagpAiDKP1TvL75KakmATDRj">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=11-IATtlVQouwHFwjJPAwgKz9LK_qlXzL"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=11-IATtlVQouwHFwjJPAwgKz9LK_qlXzL">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=14cvO38kpbnr_mt9BIJ_oIaC_Fvykk6B3"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=14cvO38kpbnr_mt9BIJ_oIaC_Fvykk6B3">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1MFKZmtk4t6UCNR0NPHiiEwDkFMcUaRr7"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1MFKZmtk4t6UCNR0NPHiiEwDkFMcUaRr7">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1ZeqSM-JP0M6eytKEIv1X6qyQdtbya6I2"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1ZeqSM-JP0M6eytKEIv1X6qyQdtbya6I2">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Cd9pz4ZacXVaTsHVuNwIq8Gua5IuAsqY"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Cd9pz4ZacXVaTsHVuNwIq8Gua5IuAsqY">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1dgpfLeD4O0--wcaA2M7ZsQeD4BJf92rn"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1dgpfLeD4O0--wcaA2M7ZsQeD4BJf92rn">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1cj_5pDjanmppLeVyhy3TjSVbpakFsWqy"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1cj_5pDjanmppLeVyhy3TjSVbpakFsWqy">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1zH9BBB9lxfYLBKCnFwGdNKEn6TV97js-"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1zH9BBB9lxfYLBKCnFwGdNKEn6TV97js-">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1tLaow_KZEI-p5QZ4bhflgxaWHGIgZzFg"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1tLaow_KZEI-p5QZ4bhflgxaWHGIgZzFg">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1zYZAmofmOI6kIY2RIdubxBwInJQYERpt"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1zYZAmofmOI6kIY2RIdubxBwInJQYERpt">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1PR8U0MGMrW5IYi3EWCF3MN1iUBSRF4LE"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1PR8U0MGMrW5IYi3EWCF3MN1iUBSRF4LE">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=16hwcjBCUohIpn0lgnkPKhfhNM6Ap16Q7"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=16hwcjBCUohIpn0lgnkPKhfhNM6Ap16Q7">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1GhJ311ZyEsYjL9KHHKYI1jFiaL-7KtF3"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1GhJ311ZyEsYjL9KHHKYI1jFiaL-7KtF3">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=16BY4v0WcRI6wUNiXi0FcIwl0CatHxZXA"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=16BY4v0WcRI6wUNiXi0FcIwl0CatHxZXA">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1TtVfBYrHa-4mg8torVbJQm3NGhUAVc1O"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1TtVfBYrHa-4mg8torVbJQm3NGhUAVc1O">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1C5UfCLl3YPa2x2Z7e6zolXKMllhZZ50a"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1C5UfCLl3YPa2x2Z7e6zolXKMllhZZ50a">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1poTKRi6RVY5X1RXLzFJQEQYyY6sRfirx"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1poTKRi6RVY5X1RXLzFJQEQYyY6sRfirx">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Lq5snKfDEElkVSrH962PeTkffJjS9CV7"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Lq5snKfDEElkVSrH962PeTkffJjS9CV7">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1WMUK6dGKe9bFXUM0p5GQcYhrzzoQ2See"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1WMUK6dGKe9bFXUM0p5GQcYhrzzoQ2See">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1XZ01k476Hv5X5vyjemXH3q1Glyg1gRbV"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1XZ01k476Hv5X5vyjemXH3q1Glyg1gRbV">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1n9ghXsM6LrgdOT4cu3eZsJkzMRUghVYg"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1n9ghXsM6LrgdOT4cu3eZsJkzMRUghVYg">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1oS85ldPDiWaq64aH0xAtSNMIDE2fRSNp"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1oS85ldPDiWaq64aH0xAtSNMIDE2fRSNp">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1-ab29CVqYXZ_I90bZMkF8ESL64QvOjaZ"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1-ab29CVqYXZ_I90bZMkF8ESL64QvOjaZ">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=11Cbe8lWzWVgR9UrvAl125FgthV8YVmro"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=11Cbe8lWzWVgR9UrvAl125FgthV8YVmro">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1SWp8PX9Ya_mRdUQhLsrPmeEXyTdExmJI"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1SWp8PX9Ya_mRdUQhLsrPmeEXyTdExmJI">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1qMlhaesyNxP4USPq1h3ckbiZniDG_s_C"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1qMlhaesyNxP4USPq1h3ckbiZniDG_s_C">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Xl1YBJzGI6ugohGFMYLIsI2r55pqBRtn"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Xl1YBJzGI6ugohGFMYLIsI2r55pqBRtn">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1FBEtjmGULP43CiHvSPBP-7ZWHZKmUs7O"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1FBEtjmGULP43CiHvSPBP-7ZWHZKmUs7O">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Bs4HUnz_uawXq8DU5N_voXbFwGkPIp-m"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Bs4HUnz_uawXq8DU5N_voXbFwGkPIp-m">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1P8NysQdIFPR1DPvFs_MjIcBt-JgOgr9j"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1P8NysQdIFPR1DPvFs_MjIcBt-JgOgr9j">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1izPhNR7pfNh5HUALAaaWLzwvo70ELRos"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1izPhNR7pfNh5HUALAaaWLzwvo70ELRos">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Nh9I0XEwLyCHNw_vH3XpQJLJqwjTSrc3"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Nh9I0XEwLyCHNw_vH3XpQJLJqwjTSrc3">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Pn-HYg2J5_OuA2YvRG-ZCQzsvml67TrK"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Pn-HYg2J5_OuA2YvRG-ZCQzsvml67TrK">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1oyAZ5XdcA_f5W9c_nuk7XV1ppzDgdI81"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1oyAZ5XdcA_f5W9c_nuk7XV1ppzDgdI81">Download</a></div></div>
+<div class="lightbox" id="lightbox">
+<img alt="Full view" id="lightbox-img" src=""/>
+<button onclick="closeLightbox()">Back</button>
+</div>
+<footer>
+<p><strong>Contact Us</strong></p>
+<p>Phone: +91 944 1060 578 , +91 955 0652 720</p>
+<p>Email: samajayaprakash123@gmail.com</p>
+<p>Address: Kothulabada , Mdl : Palakurthy ,  Dist: Jangaon , Telangana - 506244</p>
+</footer>
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.addEventListener('click', function(e) {
+      if (e.target.matches('.gallery-item img')) {
+        lightboxImg.src = e.target.src;
+        lightbox.style.display = 'flex';
+      }
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

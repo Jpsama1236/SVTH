@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Birthdays</title>
+<style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f3fb;
+    }
+    nav {
+      background: #7c3592;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 15px 20px;
+      gap: 15px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img { height: 40px; }
+    .logo-title {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    header {
+      background: linear-gradient(90deg, #8e44ad, #9b59b6);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #8e44ad;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 0 0 12px 12px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      font-size: 0.95em;
+    }
+    .download-btn:hover { background: #732d91; }
+    footer {
+      background: #8e44ad;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      flex-direction: column;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+    .lightbox button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .lightbox button:hover { background: #ddd; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      .gallery { padding: 15px; gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+<div class="logo">
+<img alt="SVTH Logo" src="https://drive.google.com/thumbnail?id=1zxtTQJhO3zg-E-iL94vuwULzutB9Q5V1"/>
+<span class="logo-title">SVTH</span>
+</div>
+<a href="index.html">Home</a>
+</nav>
+<header>
+<h1>Birthdays</h1>
+<p>A beautifully aligned, mobile-optimized image gallery</p>
+</header>
+<div class="gallery"><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=14_uIN9YrE4m_z_faIBFLNQcOeFUso-nJ"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=14_uIN9YrE4m_z_faIBFLNQcOeFUso-nJ">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1rW40CMf_oy813nkUyMxgMob4Rjo1T_og"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1rW40CMf_oy813nkUyMxgMob4Rjo1T_og">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1M8aB2r7C-DI1MdZwb6fDRIXSWCNDU8PW"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1M8aB2r7C-DI1MdZwb6fDRIXSWCNDU8PW">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1SDGPv42QEYN2iowRaQV9K5b1JtL5iLyg"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1SDGPv42QEYN2iowRaQV9K5b1JtL5iLyg">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1lRmBdAH4GABOaxLAI-HkbLIQuqvQok3I"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1lRmBdAH4GABOaxLAI-HkbLIQuqvQok3I">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1yYpen1ypnwSuNghNh8L-2eP3p_ecxcHM"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1yYpen1ypnwSuNghNh8L-2eP3p_ecxcHM">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Ntal5QJpbZjnBiBPwuwAuTwrYD8CXGsX"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Ntal5QJpbZjnBiBPwuwAuTwrYD8CXGsX">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1WwC2stq1bZHyoMMTrE0Cn7g-oR_wYCoN"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1WwC2stq1bZHyoMMTrE0Cn7g-oR_wYCoN">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1fpp5rVVEqGrmLgPCwyucnKfzkyLxL_aD"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1fpp5rVVEqGrmLgPCwyucnKfzkyLxL_aD">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=177nDSzM3lpzCNY-xDCPg4LVau3rF7hyX"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=177nDSzM3lpzCNY-xDCPg4LVau3rF7hyX">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1_m6eW1RIc9GPAKpbyPECk_r4Msy1qIiy"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1_m6eW1RIc9GPAKpbyPECk_r4Msy1qIiy">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1ZuWM12EoqEVY_GP7nPkpUipbT65RpWwA"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1ZuWM12EoqEVY_GP7nPkpUipbT65RpWwA">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1NZ1Wh1OcmCaKnB4_1G5xTsICjEBxBYzu"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1NZ1Wh1OcmCaKnB4_1G5xTsICjEBxBYzu">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1ZxYEMKWxLwkJLr3NTjZJonXOa2obBfSl"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1ZxYEMKWxLwkJLr3NTjZJonXOa2obBfSl">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1RDkmaI89y2M2rtGLA38866xiG_zxIa_9"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1RDkmaI89y2M2rtGLA38866xiG_zxIa_9">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1vut9_g6Eud0P_W-YDoV-1m6eB2ZtMWqg"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1vut9_g6Eud0P_W-YDoV-1m6eB2ZtMWqg">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=17vvL7HMfza1j16XRopeAAIs3C3rLVp1G"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=17vvL7HMfza1j16XRopeAAIs3C3rLVp1G">Download</a></div></div>
+<div class="lightbox" id="lightbox">
+<img alt="Full view" id="lightbox-img" src=""/>
+<button onclick="closeLightbox()">Back</button>
+</div>
+<footer>
+<p><strong>Contact Us</strong></p>
+<p>Phone: +91 944 1060 578 , +91 955 0652 720</p>
+<p>Email: samajayaprakash123@gmail.com</p>
+<p>Address: Kothulabada , Mdl : Palakurthy ,  Dist: Jangaon , Telangana - 506244</p>
+</footer>
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.addEventListener('click', function(e) {
+      if (e.target.matches('.gallery-item img')) {
+        lightboxImg.src = e.target.src;
+        lightbox.style.display = 'flex';
+      }
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

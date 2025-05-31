@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>21st Day Function</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f3fb;
+      margin: 0;
+    }
+    nav {
+      background: #7c3592;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 15px 30px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      height: 40px;
+    }
+    .logo-title {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    header {
+      background: linear-gradient(90deg, #8e44ad, #9b59b6);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .gallery-item a.download-btn {
+      display: inline-block;
+      margin-top: 8px;
+      background: #8e44ad;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    footer {
+      background-color: #8e44ad;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <img src="https://drive.google.com/thumbnail?id=1zxtTQJhO3zg-E-iL94vuwULzutB9Q5V1" alt="SVTH Logo" />
+    <span class="logo-title">SVTH</span>
+  </div>
+  <a href="index.html">Home</a>
+</nav>
+
+<header>
+  <h1>Sri Venkateshwara Tent House</h1>
+  <p>Your one-stop solution for event decorations</p>
+</header>
+
+
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="https://drive.google.com/thumbnail?id=1BVeYucWI2AZHEk0qy3v9n5Vf12cDGAwg" alt="21st Day Function 1">
+    <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1BVeYucWI2AZHEk0qy3v9n5Vf12cDGAwg" download>Download</a>
+  </div>
+  <div class="gallery-item">
+    <img src="https://drive.google.com/thumbnail?id=1YsAR6eiRMwaEDON216RvxBx5iJB4EbXu" alt="21st Day Function 2">
+    <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1YsAR6eiRMwaEDON216RvxBx5iJB4EbXu" download>Download</a>
+  </div>
+  <div class="gallery-item">
+    <img src="https://drive.google.com/thumbnail?id=1Hkn9YcKx9XpKhmBSuk5FOeHA7_xrkbGF" alt="21st Day Function 3">
+    <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1Hkn9YcKx9XpKhmBSuk5FOeHA7_xrkbGF" download>Download</a>
+  </div>
+  <div class="gallery-item">
+    <img src="https://drive.google.com/thumbnail?id=1El28K9mShLwLJ96jJC-do0CjHO1JpLN0" alt="21st Day Function 4">
+    <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1El28K9mShLwLJ96jJC-do0CjHO1JpLN0" download>Download</a>
+  </div>
+  <div class="gallery-item">
+    <img src="https://drive.google.com/thumbnail?id=1_M74LlSwm9U1ivTMjc2w_P7E4wU_MX7k" alt="21st Day Function 5">
+    <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1_M74LlSwm9U1ivTMjc2w_P7E4wU_MX7k" download>Download</a>
+  </div>
+  <div class="gallery-item">
+    <img src="https://drive.google.com/thumbnail?id=1jA67LxKXL_zzjEdD-Yt3HsbxDPjEoCjg" alt="21st Day Function 6">
+    <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1jA67LxKXL_zzjEdD-Yt3HsbxDPjEoCjg" download>Download</a>
+  </div>
+</div>
+
+<footer>
+  <p><strong>Contact Us</strong></p>
+  <p>Phone: +91 944 1060 578 , +91 955 0652 720</p>
+  <p>Email: samajayaprakash123@gmail.com</p>
+  <p>Address: Kothulabada , Mdl : Palakurthy ,  Dist: Jangaon , Telangana - 506244</p>
+</footer>
+
+
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+  }
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    background: #8e44ad;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .gallery-item img {
+    cursor: pointer;
+    object-fit: cover;
+    height: 250px;
+  }
+</style>
+
+<div id="imgModal" class="modal">
+  <span class="close-modal" id="modalClose">Back</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const modalClose = document.getElementById("modalClose");
+  document.querySelectorAll(".gallery-item img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src.replace("thumbnail", "uc").replace("id=", "id=") + "&export=view";
+    });
+  });
+  modalClose.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+</script>
+
+<style>
+  .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+</style>
+
+</body>
+</html>

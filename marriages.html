@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marriages</title>
+<style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f3fb;
+    }
+    nav {
+      background: #7c3592;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 15px 20px;
+      gap: 15px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img { height: 40px; }
+    .logo-title {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    header {
+      background: linear-gradient(90deg, #8e44ad, #9b59b6);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #8e44ad;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 0 0 12px 12px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      font-size: 0.95em;
+    }
+    .download-btn:hover { background: #732d91; }
+    footer {
+      background: #8e44ad;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      flex-direction: column;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+    .lightbox button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .lightbox button:hover { background: #ddd; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      .gallery { padding: 15px; gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+<div class="logo">
+<img alt="SVTH Logo" src="https://drive.google.com/thumbnail?id=1zxtTQJhO3zg-E-iL94vuwULzutB9Q5V1"/>
+<span class="logo-title">SVTH</span>
+</div>
+<a href="index.html">Home</a>
+</nav>
+<header>
+<h1>Marriages</h1>
+<p>A beautifully aligned, mobile-optimized image gallery</p>
+</header>
+<div class="gallery"><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Sw0tJsIw9-a1z8UHYwBtKo1Z37GeUkPu"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Sw0tJsIw9-a1z8UHYwBtKo1Z37GeUkPu">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1a7nDGB1i6Rv9fmL7L6zitEDZ9DD7cFtO"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1a7nDGB1i6Rv9fmL7L6zitEDZ9DD7cFtO">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1_wLpwfIeacVosGbethO73BPR0bMZdfPI"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1_wLpwfIeacVosGbethO73BPR0bMZdfPI">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1bJV2j0MiQUjqtbSFTTfapMeP7JAxg_N5"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1bJV2j0MiQUjqtbSFTTfapMeP7JAxg_N5">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1Zc-2Gt8X2VwwIstQhjqAD_jE4vBet1Ar"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1Zc-2Gt8X2VwwIstQhjqAD_jE4vBet1Ar">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=1su1IrI4DZfYdjlkl_CcObY7EezzLwgFY"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=1su1IrI4DZfYdjlkl_CcObY7EezzLwgFY">Download</a></div><div class="gallery-item"><img src="https://drive.google.com/thumbnail?id=11tSQP0Ojvx9nNojti_pRMGlPvFiKfXtB"/><a class="download-btn" href="https://drive.google.com/uc?export=download?id=11tSQP0Ojvx9nNojti_pRMGlPvFiKfXtB">Download</a></div></div>
+<div class="lightbox" id="lightbox">
+<img alt="Full view" id="lightbox-img" src=""/>
+<button onclick="closeLightbox()">Back</button>
+</div>
+<footer>
+<p><strong>Contact Us</strong></p>
+<p>Phone: +91 944 1060 578 , +91 955 0652 720</p>
+<p>Email: samajayaprakash123@gmail.com</p>
+<p>Address: Kothulabada , Mdl : Palakurthy ,  Dist: Jangaon , Telangana - 506244</p>
+</footer>
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.addEventListener('click', function(e) {
+      if (e.target.matches('.gallery-item img')) {
+        lightboxImg.src = e.target.src;
+        lightbox.style.display = 'flex';
+      }
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
